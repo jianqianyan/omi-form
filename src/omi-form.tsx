@@ -2,6 +2,7 @@ import { tag, h, WeElement, OverwriteProps } from 'omi'
 
 import * as css from './omi-form.scss'
 import { unit } from './appClass'
+import '@omiu/button'
 
 export type Attrs = {
     jsonT: Array<unit>
@@ -29,25 +30,25 @@ export default class Counter extends WeElement<Props> {
     }
 
     ans: String
-    _contName: String
+    _contName: any
     install(): void {
 
     }
 
     renderAction() {
         return this.props.jsonT.map(item => {
-
+            this._contName = 'o-' + item.type;
             return (
-                {}
+                <div>{<this._contName></this._contName>}</div>
             )
         })
     }
 
     render(props: Props) {
-
         return (
             // <h.f></h.f> or <></> are supported
             <h.f>
+                {this.renderAction()}
             </h.f>
         )
     }
