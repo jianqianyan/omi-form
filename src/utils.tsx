@@ -15,11 +15,6 @@ let iterative = function(fn: any){
 }
 
 
-let checkUndefined = (target: any , defaultValue: any) => {
-    if(typeof target == "undefined")    return defaultValue;
-    return target;
-};
 
 export {
-    checkUndefined
 }

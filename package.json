@@ -12,6 +12,8 @@
     "vite": "^2.9.14"
   },
   "dependencies": {
+    "@omiu/button": "^0.0.11",
+    "@omiu/input": "^0.0.12",
     "omi": "latest"
   }
 }
