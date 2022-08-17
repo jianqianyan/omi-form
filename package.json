@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "@omiu/button": "^0.0.11",
+    "@omiu/checkbox": "^0.0.14",
+    "@omiu/date-picker": "^0.0.10",
     "@omiu/input": "^0.0.12",
     "omi": "latest"
   }
